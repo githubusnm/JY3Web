@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>还是练习</title>
+
+		<script src="js/jquery.js"></script>
+
+		<style>
+			.clas {
+				width: 50px;
+				height: 50px;
+				background-color: black;
+			}
+			
+			.nxt {
+				width: 50px;
+				height: 50px;
+				background-color: blue;
+			}
+			
+			#talk {
+				width: 200px;
+				height: 200px;
+				border: 5px solid black;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="word">
+			<p>word</p>
+		</div>
+		<div class="clas"></div>
+		<div class="nxt"></div>
+		<p>好好学习天天向上</p>
+		<div id="talk">
+			<div id="wod">
+
+			</div>
+		</div>
+		<button id="bttn">发送</button>
+
+		<div id="tble">
+			<table border="0" cellspacing="" cellpadding="">
+				<tr>
+					<th>成绩单</th>
+				</tr>
+				<tr>
+					<td>学号</td>
+					<td>姓名</td>
+					<td>数学</td>
+					<td>英语</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+				<tr>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+					<td>000000</td>
+				</tr>
+			</table>
+		</div>
+
+		<body>
+			<button>请点击这里，来切换不同的背景颜色</button>
+
+			<script>
+				$(function() {
+
+					$("tr:gt(3)").css("color", "red")
+
+					$("#bttn").click(function() {
+						$("#wod").append("<div><span>aaa</span></div>")
+					})
+
+					$("#word").css({
+						"width": "50px",
+						"height": "50px",
+						"background-color": "yellow"
+					});
+					$("#word").addClass("clas");
+					$("#word").next().next().next().css("background-color", "#FF0000");
+					//				alert($("#word").html());
+				})
+
+				
+			
+			</script>
+		</body>
+
+</html>

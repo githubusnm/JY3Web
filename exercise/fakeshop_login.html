@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/fakeshop.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+	</head>
+
+	<body>
+		<div id="back">
+
+			<div id="login_logo"></div>
+			<div id="background"></div>
+			<div id="erweima"></div>
+			<div id="jietu"></div>
+			<div id="yuanxing">>
+
+			</div>
+			<div id="zhuce"></div>
+
+		</div>
+
+		<script type="text/javascript">
+			$("#login_logo").append("<a href='fakeshop.html'><img src='img/logo-201305-b.png' /></a> <b style='font-size: 20px;'>欢迎登录</b>")
+			$("#background").append("<img style='width: 414px;' src='https://img20.360buyimg.com/da/jfs/t1/20752/21/11437/42107/5c905abfEb28f9a1d/b37f214307eaa613.jpg' style='position: absolute;' />")
+			$("#erweima").append("<img src='https://qr.m.jd.com/show?appid=133&size=147&t=1553759241448' />")
+			$("#jietu").append("<img style='animation-delay: 2s;' src='img/jietu.PNG' />")
+			$("#zhuce").append("<b style='color: red;'>立即注册</b>")
+
+			$("#erweima").click(function() {
+				$("#jietu").css("display", "block")
+			})
+			$("#jietu").click(function() {
+				$("#jietu").css("display", "none")
+			})
+		</script>
+	</body>
+
+</html>

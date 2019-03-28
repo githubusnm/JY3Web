@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>练习</title>
+		<script src="js/jquery.js"></script>
+	</head>
+
+	<body>
+
+		<div id="box">
+			<div id="change"></div>
+		</div>
+
+		<div id="q">用户名:</div>
+		<div><input type="text" /></div>
+		<div id="a">密码：</div>
+		<div><input type="text"></div>
+
+		<div id="rd"></div>
+		<div>
+			<table border="5px">
+				<tr>
+					<td colspan="2">aaa</td>
+					<td rowspan="2">aaa</td>
+				</tr>
+				<tr>
+					<td rowspan="2">aaa</td>
+					<td>aaa</td>
+				</tr>
+				<tr>
+					<td colspan="2">aaa</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+		<strong>什么是jQuery</strong><br />
+		<div id="hidden">
+			<ul>
+				<li>1.jQuery是一个JavaScript库</li>
+				<li>2.jQuery极大地简化了JavaScript编程</li>
+				<li>3.jQuery很容易学习</li>
+			</ul>
+		</div>
+
+		<div id="nohidden">
+
+		</div>
+
+		<ul>
+			<li id="li1">这是1</li>
+			<li id="li2">这是2</li>
+			<li id="li3">这是3</li>
+			<li id="li4">这是4</li>
+			<span id="span">
+				这是span
+			</span>
+		</ul>
+
+		<ul>
+			<li id="li5">5</li>
+			<li id="li6">6</li>
+			<li id="li7">7</li>
+			<li id="li8">8</li>
+		</ul>
+
+		<table border="5px" id="table">
+			<tr>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td>12</td>
+			</tr>
+		</table>
+
+		<img src="img/1.jpg" alt="aaa" title="aaaa"/>
+
+		<script>
+			$("strong").click(function() {
+				$("strong").css("background-color", "#FF0000")
+				$("#hidden").css("visibility", "visible")
+
+				//					$("#hidden").toggle()
+
+			})
+			$("#rd").click(function() {
+				$("*").css("background-color", "black")
+			})
+
+			$("#li2,#li4").css("color", "#FF0000")
+			$("ul>span").css("color", "blue")
+
+			$("ul li:first-child").css("color", "green")
+			$("ul li:last-child").css("color", "aqua")
+
+			//				$("table td:even").css("background-color","#FAFAD2")
+			$("table td:odd").css("background-color", "#FAFAD2")
+
+			$("strong").click(function() {
+				$("#nohidden").append("1.jQuery是一个JavaScript库<br />2.jQuery极大地简化了JavaScript编程<br />3.jQuery很容易学习")
+			})
+		</script>
+
+	</body>
+	<style>
+		#rd {
+			width: 50px;
+			height: 25px;
+			background-image: radial-gradient(red, blue);
+			border-radius: 25px 25px 0 0;
+		}
+		
+		#hidden {
+			visibility: hidden;
+		}
+		
+		#box{
+			width: 100px;
+			height: 100px;
+			background-color: gainsboro;
+			position: absolute;
+		}
+		
+		#change {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: yellow;
+			transition: margin-left 2s;
+			animation: move 2s;
+			position: absolute;
+		}
+		
+		#change:hover {
+			margin-left: 100px;
+		}
+		
+		@keyframes move {
+			from {
+				margin-left: 0px;
+			}
+			to {
+				margin-left: 200px;
+				width: 100px;
+				height: 100px;
+			}
+		}
+	</style>
+	<script>
+	</script>
+
+</html>

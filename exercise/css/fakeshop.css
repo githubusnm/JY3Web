@@ -1,0 +1,150 @@
+#bg {
+	width: 400px;
+	height: 650px;
+	background-color: #F5F5F5;
+	margin-left: px;
+}
+
+#logo {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+}
+
+#login {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	margin-left: 270px;
+}
+
+#sousuo {
+	display: inline-block;
+	position: absolute;
+	margin-left: 160px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#checkbox {
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	background-color: red;
+	margin-top: 65px;
+	margin-left: 50px;
+	font-size: 13px;
+	text-align: center;
+	color: white;
+	line-height: 30px;
+}
+
+#pic11 {
+	width: 380px;
+	margin-top: 110px;
+}
+
+#pic22 {
+	width: 380px;
+	position: absolute;
+	margin-top: -175px;
+	transition: 1s;
+}
+
+#pic22:hover {
+	visibility: hidden;
+}
+
+#tag1{
+	font-size: 20px;
+	text-align: center;
+}
+
+#phone{
+	width: 90px;
+	height: 100px;
+	position: absolute;
+	margin-left: 23px;
+}
+
+#detail1{
+	font-size: 15px;
+	font-style: italic;
+	margin-left: 200px;
+	position: absolute;
+	margin-top: 25px;
+}
+
+#shoe{
+	width: 150px;
+	height: 70px;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 60px;
+}
+
+#detail2{
+	font-size: 15px;
+	font-style: italic;
+	margin-left: 200px;
+	position: absolute;
+	margin-top: 135px;
+}
+
+#tag2{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+#toy{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-left: 23px;
+}
+
+#detail3{
+	font-size: 15px;
+	font-style: italic;
+	margin-left: 200px;
+	position: absolute;
+	margin-top: 30px;
+}
+
+#erweima{
+	position: absolute;
+	margin-left: 110px;
+	margin-top: 20px;
+	transition: margin-left 2s;
+}
+#erweima:hover{
+	margin-left: 35px;
+}
+#jietu{
+	position: absolute;
+	margin-left: 180px;
+	display: none;
+}
+#yuanxing{
+	position: absolute;
+	color: white;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 25px;
+	font-size: 20px;
+	font-weight: 500;
+	background-color: red;
+	margin-left: 120px;
+	margin-top: 195px;
+}
+#zhuce{
+	position: absolute;
+	margin-left: 160px;
+	margin-top: 200px;
+}
+#lg{
+	
+}

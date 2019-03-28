@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>动画</title>
+		<style type="text/css">
+			#zheng {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				transition: width 2s;
+			}
+			
+			#zheng:hover {
+				width: 300px;
+			}
+			
+			#chang {
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				transition: margin-left 2s;
+			}
+			
+			#chang:hover {
+				margin-left: 200px;
+			}
+			
+			#sheng {
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				transition: transform 2s;
+			}
+			
+			#sheng:hover {
+				transform: rotate(180deg);
+			}
+			
+			#shang {
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				transition: width 2s, height 2s, transform 2s;
+			}
+			
+			#shang:hover {
+				width: 150px;
+				height: 150px;
+				transform: rotate(360deg);
+			}
+			
+			#zhang {
+				width: 100px;
+				height: 100px;
+				background-color: black;
+				animation: color 2s;
+			}
+			
+			@keyframes color {
+				from {
+					background-color: black
+				}
+				to {
+					;
+					background-color: white
+				}
+			}
+			
+			#cheng {
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+				animation: move 5s;
+			}
+			
+			@keyframes move {
+				0% {
+					background-color: orange;
+					margin-left: 0px;
+					margin-top: 0px;
+				}
+				25% {
+					background-color: red;
+					margin-left: 200px;
+					margin-top: 0px;
+				}
+				50% {
+					background-color: blue;
+					margin-left: 200px;
+					margin-top: 200px;
+				}
+				75% {
+					background-color: yellow;
+					margin-left: 0px;
+					margin-top: 200px;
+				}
+				100% {
+					background-color: green;
+					margin-left: 0px;
+					margin-top: 0px;
+				}
+			}
+			
+			#guang {
+				position: absolute;
+				margin-left: 100px;
+				margin-top: -400px;
+				width: 100px;
+				height: 100px;
+				background-color: purple;
+				animation: mm 5s;
+				animation-iteration-count: infinite;
+			}
+			
+			@keyframes mm {
+				0% {
+					background-color: purple;
+					margin-left: 100px;
+					margin-top: -400px;
+				}
+				25% {
+					background-color: black;
+					margin-left: 300px;
+					margin-top: -400px;
+				}
+				50% {
+					background-color: orange;
+					margin-left: 300px;
+					margin-top: -100px;
+				}
+				75% {
+					background-color: white;
+					margin-left: 100px;
+					margin-top: -100px;
+				}
+				100% {
+					background-color: yellow;
+					margin-left: 100px;
+					margin-top: -400px;
+				}
+			}
+			
+			#zhuang {
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				margin: -300px 0px 0px 200px;
+				animation: all 5s;
+				animation-iteration-count: infinite;
+			}
+			
+			@keyframes all {
+				0% {
+					background-color: pink;
+					margin-left: 200px;
+					margin-top: -300px;
+				}
+				25% {
+					background-color: deeppink;
+					margin-left: 200px;
+					margin-top: -100px;
+				}
+				50% {
+					background-color: red;
+					margin-left: 300px;
+					margin-top: -100px;
+				}
+				75% {
+					background-color: deeppink;
+					margin-left: 300px;
+					margin-top: -200px;
+				}
+				100% {
+					background-color: pink;
+					margin-left: 200px;
+					margin-top: -300px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="zheng"></div>
+		<div id="chang"></div>
+		<div id="sheng"></div>
+		<div id="shang">这是一段非常非常非常非常非常长的话</div>
+		<div id="zhang"></div>
+		<div id="cheng"></div>
+		<div id="guang"></div>
+		<div id="zhuang"></div>
+	</body>
+
+</html>

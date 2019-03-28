@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#main{
+				width: 500px;
+				height: 500px;
+				background-color: lightgoldenrodyellow;
+			}
+			#tw{
+				
+			}
+		</style>
+		<script src="js/jquery.js"></script>
+	</head>
+	
+	<body>
+		<div id="main">
+				<div id="tw"></div>
+				<div id="tw2"></div>
+		</div>
+		<div>用户1
+			<input id="txt" type="text" value="">
+			<input id="btn" type="button" value="发送">
+		</div>
+		<div>用户2
+			<input id="tx" type="text" value="">
+			<input id="bt" type="button" value="发送">
+		</div>
+		<script>
+			$("#btn").click(function(){
+				var txt = document.getElementById("txt").value;
+				$(function(){
+					$("#tw").append("<div>"+txt+"</div>").css({"margin-right":"30px","text-align":"right"});
+					document.getElementById("txt").value = "";
+					
+					
+					
+				})
+			})
+			
+			$("#bt").click(function(){
+				var txt = document.getElementById("tx").value;
+				$(function(){
+					$("#tw2").append("<div>"+txt+"</div>").css({"margin-left":"30px","text-align":"left"});
+					document.getElementById("tx").value = "";
+					
+					
+					
+				})
+			})
+			
+		</script>
+	</body>
+</html                         

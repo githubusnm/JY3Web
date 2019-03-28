@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>假页面</title>
+		<link rel="shortcut icon" href="img/logo.ico" />
+
+		<link rel="stylesheet" href="css/fakeshop.css" />
+
+		<script src="js/jquery.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="bg"><!--大背景-->
+			<div class="header"><!--整个头部-->
+				<div id="logo"></div>
+				<div id="login"></div>
+				<div id="sousuo"></div>
+				<div id="checkbox"></div>
+			</div>
+			
+			<div id="PIC"><!--两个图片-->
+				<div id="pic1"></div>
+				<div id="pic2"></div>
+			</div>
+			
+			<div id="tag1"></div>
+			
+			<div id="show">
+				<div id="phone"></div>
+				<div id="detail1"></div>
+				
+				<div id="shoe"></div>
+				<div id="detail2"></div>
+			</div>
+			
+			<div id="tag2"></div>
+			
+			<div id="toy"></div>
+			<div id="detail3"></div>
+			
+		</div>
+
+
+
+		<script>
+			$(document).ready(function() {
+				//				alert("hello you");
+			})
+
+			$("html").ready(function() {
+				//				alert("hello you");
+			})
+
+			$(function() {
+				//				alert("hello you");
+				$("#logo").html("<img src='img/2019-03-25_141714.png' />");
+				$("#login").append("<a href='fakeshop_login.html'><button>登录</button></a><button>注册</button>")
+				$("#sousuo").html("<input type='text' /><button>搜索</button>");
+				$("#checkbox").append("<b>针织衫 | 连衣裙 | 四件套 | 摄像头 | 书 | 手机</b>")
+				$("#pic1").append("<img id='pic11' src='img/1.jpg' />")
+				$("#pic2").append("<img id='pic22' src='img/2.jpg' />")
+				$("#tag1").append("<b>——时尚达人——</b>")
+				$("#phone").append("<img id='phone' src='img/phone.jpg' />")
+				$("#detail1").append("<b>智能手机"+"<br>"+"白条免息"+"<br />"+"最高12期免息"+"<br />")
+				$("#shoe").append("<img id='shoe' src='img/shoe.jpg' />")
+				$("#detail2").append("<b>运动户外"+"<br>"+"大牌直降，爆款直降"+"<br />")
+				$("#tag2").append("<b>——特色推荐——</b>")
+				$("#toy").append("<img id='toy' src='img/4.jpg' />")
+				$("#detail3").append("<b>极致性价比"+"<br>"+"黑科技送礼潮品"+"<br />")
+			})
+		</script>
+	</body>
+
+</html>
